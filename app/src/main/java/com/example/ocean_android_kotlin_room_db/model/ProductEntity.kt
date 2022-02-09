@@ -6,9 +6,9 @@ import androidx.room.PrimaryKey
 @Entity(tableName = "products")
 data class ProductEntity(
     @PrimaryKey
-    val id: Long,
+    val id: Long?,
 
     val nome: String,
 
-    val imageUrl: String
+    val imageUrl: String?
 )
